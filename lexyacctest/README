@@ -1,0 +1,16 @@
+To test the example, lex and yacc MUST be installed first.
+Run the following from the command line:
+
+    lex --header-file=lex.yy.h lexer.l
+        (this will produce tokenizer in lex.yy.h and lex.yy.c)    
+
+    yacc -d parser.y 
+        (this will produce parser in y.tab.h and y.tab.c)    
+
+    gcc lex.yy.c y.tab.c 
+        (this will produce executable version of parser in a.out)    
+
+    ./a.out input1.txt
+    ./a.out input2.txt 
+    ./a.out input1.txt input2.txt 
+        (this will parse the content of input1.txt and/or input2.txt)
