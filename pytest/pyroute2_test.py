@@ -1,5 +1,5 @@
 from pyroute2 import netns
 
-#netns.create("jedan")
+#netns.create("custom")
 print(netns.listnetns())
 
